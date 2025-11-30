@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>md ashif</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="md ashif.png" type="image/x" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: rgb(1, 1, 68);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(47, 8, 84);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(136, 136, 251);
+        font-size: 1.04rem;
+      }
+
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+        align-items: center;
+      }
+
+      .firstsection > div {
+        width: 40%;
+      }
+
+      .leftsection {
+        font-size: 3rem;
+        margin: 30px 0;
+        animation: fadeIn 2s ease-in-out, slideInLeft 1.5s ease-in-out;
+      }
+
+      .leftsection .buttons {
+        padding: 50px 0;
+      }
+
+      .leftsection .btn {
+        padding: 12px;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        background: #5a56a2;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .leftsection .btn:hover {
+        background-color: #7a75c2;
+        transform: scale(1.05);
+      }
+
+      .rightsection img {
+        margin-left: 30px;
+        width: 90%;
+        animation: fadeIn 2s ease-in-out, slideInRight 1.5s ease-in-out;
+      }
+
+      .purple {
+        color: red;
+      }
+
+      .left {
+        color: rgb(226, 242, 6);
+      }
+
+      .white {
+        color: white;
+      }
+
+      #element {
+        color: rgb(215, 251, 12);
+      }
+
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 50vh;
+      }
+      .box {
+        background-color: #ccc;
+        height: 200px;
+        width: 170px;
+        border: 2px solid rgb(232, 249, 3);
+        border-radius: 8px;
+        margin: 10px;
+        display: inline-block;
+        /* justify-content: space-around; */
+        justify-content: center;
+        box-shadow: -0px 8px 8px 8px rgb(128, 112, 112);
+        transition: 0.5s ease;
+        cursor: pointer;
+      }
+      
+      .box:hover {
+        height: 205px;
+        width: 175px;
+        border: #0a06fd solid 3px;
+        
+      }
+      
+      .box6 {
+        width: 184px;
+      }
+      .box h1 {
+        color: #0a06fd;
+        text-align: center;
+      }
+      .image1 {
+        mix-blend-mode: color-burn;
+        margin: 5px;
+        height: 100px;
+        width: 160px;
+        justify-content: center;
+      }
+
+      .secondsection h1 {
+        font-size: 2rem;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      .skills {
+        padding: 0px;
+
+        /* padding-left: 20px; */
+      }
+
+      .projects {
+        padding: 30px 0 0 20px;
+      }
+
+      .projects ul li a {
+        text-decoration: none;
+        color: rgb(239, 247, 197);
+      }
+
+      .about-content {
+        font-size: 1.5rem;
+        color: whitesmoke;
+        padding: 30px 0;
+      }
+
+      .red {
+        color: rgb(102, 242, 102);
+        font-size: 1.7rem;
+      }
+      /* table */
+      .education-content {
+        width: 100%;
+        overflow-x: auto;
+        margin: 20px 0;
+      }
+
+      .table-responsive {
+        min-width: 300px;
+        width: 100%;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 5px solid #ff0202;
+      }
+
+      th,
+      td {
+        padding: 15px;
+        text-align: center;
+        border: 2px solid #d6fe0f;
+      }
+
+      th {
+        background-color: #4919f7;
+        color: white;
+        height: 30px;
+      }
+
+      td {
+        height: 30px;
+      }
+
+      /* #mdas{
+            .box1{
+                height: 100px;
+                width: 100px;
+                color: #e20f0f;
+                background-color: #020b2f;
+                text-align: center;
+                border-radius: 8PX;
+                border: #f2eeee solid ,3px;
+                
+                
+                
+            }
+            display: flex;
+                justify-content: space-around;
+                align-items: center;
+        } */
+
+      /* Responsive adjustments */
+      @media screen and (max-width: 768px) {
+        th,
+        td {
+          padding: 10px 5px;
+          font-size: 14px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        th,
+        td {
+          padding: 8px 3px;
+          font-size: 12px;
+        }
+      }
+      /* table end */
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      form label {
+        margin: 5px 0 5px;
+      }
+
+      form input,
+      form textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      form button {
+        padding: 10px;
+        background: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      form button:hover {
+        background: green;
+      }
+
+      .btn a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      footer {
+        background-color: rgb(122, 75, 122);
+      }
+
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul {
+        list-style: none;
+      }
+
+      .Footer_Anchor {
+        color: white;
+        text-decoration: none;
+      }
+
+      .Footer_Anchor:hover {
+        color: blue;
+        font-size: 1.2rem;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+
+      footer .footer-rights {
+        text-align: center;
+        color: rgb(65, 246, 237);
+        padding: 12px 0;
+      }
+
+      footer .footer-rights:hover {
+        color: #9c97f1;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInLeft {
+        from {
+          transform: translateX(-100%);
+        }
+
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes slideInRight {
+        from {
+          transform: translateX(100%);
+        }
+
+        to {
+          transform: translateX(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          height: auto;
+          padding: 10px 0;
+        }
+
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        nav ul li {
+          margin: 10px 0;
+        }
+
+        .firstsection {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .firstsection > div {
+          width: 80%;
+        }
+
+        .leftsection {
+          font-size: 2rem;
+        }
+
+        .rightsection img {
+          width: 60%;
+          margin-top: 20px;
+        }
+
+        .secondsection {
+          height: auto;
+          padding: 20px 0;
+        }
+
+        .footer {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .footer > div {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .leftsection {
+          font-size: 1.5rem;
+        }
+
+        .leftsection .btn {
+          font-size: 16px;
+          padding: 10px;
+        }
+
+        .secondsection h1 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <strong>MOHAMAD <span class="white">ASHIF</span></strong>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection" id="home">
+        <div class="leftsection">
+          Hi, My name is
+          <span class="purple"><strong>Mohamad Ashif</strong></span>
+          <div>and I am a Passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">
+              <a href="mohamad ashif.pdf">Download Resume</a>
+            </button>
+            <button class="btn">
+              <a href="https://github.com/mohamadashif">Visit Github</a>
+            </button>
+          </div>
+          <div class="icon">
+            <a href="https://www.instagram.com/king__official__96_________a7/"
+              ><img
+                src="Insta-Logo-PNG-Free-Download.png"
+                style="width: 60px; height: 45px"
+                alt=""
+            /></a>
+            <a href="https://www.facebook.com/md.ashif.shekh.489398"
+              ><img
+                src="facebook-logo-png-transparent-background-facebook-png.png"
+                style="width: 60px; height: 60px; padding-left: 30px"
+                alt=""
+            /></a>
+            <a href="https://web.whatsapp.com/"
+              ><img
+                src="whatsapp-logo-transparent.png"
+                style="width: 50px; height: 50px; padding-left: 30px"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="Picsart_25-02-21_01-59-56-285.png" alt="" />
+        </div>
+      </section>
+      <hr />
+
+      <section class="secondsection" id="about">
+        <h1>About Me</h1>
+        <div class="about-content">
+          <p>
+            Hello! I'm <strong><span class="red">Mohamad Ashif</span></strong
+            >, a BCA student currently residing in Delhi NCR. I hail from Siwan
+            district in Bihar, where my family lives. My father's name is
+            Mohamad Gyasudin. I am passionate about web development, photo
+            editing, and designing. I enjoy learning new technologies and
+            applying them to create innovative projects.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection" id="education">
+        <h1 style="color: #e3fc56">BASIC EDUCATION</h1>
+        <div class="education-content">
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Examination</th>
+                  <th>Board</th>
+                  <th>Year of passing</th>
+                  <th>Percentage %</th>
+                  <th>Stream</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Secondary</td>
+                  <td>BSEB</td>
+                  <td>2022</td>
+                  <td>70%</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Intermediate</td>
+                  <td>BSEB</td>
+                  <td>2024</td>
+                  <td>63%</td>
+                  <td>SCIENCE</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="gitam">
+          <h1 style="color: #4919f7">EDUCATION</h1>
+          <h2 style="padding-left: 30px; color: #fc56d2">
+            GITAM,DELHI NCR,BCA
+          </h2>
+          <ul style="padding-left: 60px; color: #99f3d6">
+            <li>Bachelor Of Computer Application, 2024-2028</li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection" id="skills">
+        <h1>Skills</h1>
+        <div class="skills">
+          <div class="box1 box">
+            <img class="image1" src="images (1).png" alt="" />
+            <h1>C</h1>
+          </div>
+          <div class="box2 box">
+            <img class="image1" src="images.png" alt="" />
+            <h1>C++</h1>
+          </div>
+          <div class="box3 box">
+            <img class="image1" src="htm.jpg" alt="" />
+            <h1>HTML</h1>
+          </div>
+          <div class="box4 box">
+            <img class="image1" src="css.png" alt="" />
+            <h1>CSS</h1>
+          </div>
+          <div class="box5 box">
+            <img class="image1" src="py.jpg" alt="" />
+            <h1>PYTHON</h1>
+          </div>
+          <div class="box6 box">
+            <img class="image1" src="js.png" alt="" />
+            <h1>JavaScript</h1>
+          </div>
+
+          <!-- <ul>
+                    <li>C</li>
+                    <LI>C++</LI>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Responsive Design</li>
+                    <li>Version Control (Git)</li>
+                </ul> -->
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection" id="projects">
+        <h1>Projects</h1>
+        <div class="projects">
+          <ul>
+            <li>
+              Project 1:
+              <a href="DR_ABDUL_KALAM.HTM" target="_blank"
+                >Dr APJ ABDUL_KALAM</a
+              >
+            </li>
+            <li>
+              Project 2:
+              <a href="profilecard.html" target="_blank">profile Card</a>
+            </li>
+            <li>Project 3: <a href="card.html" target="_blank">ATM CARD</a></li>
+            <li>Project 4: <a href="candle.htm" target="_blank">candle</a></li>
+            <li>
+              Project 5: <a href="calculator.htm" target="_blank">calculator</a>
+            </li>
+            <li>
+              Project 6:
+              <a href="pgenerate.htm" target="_blank">Password Generator</a>
+            </li>
+            <li>
+              Project 7: <a href="newlogin.html" target="_blank">Login page</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <!-- <section class="secondsection" id="mdas">
+            <h1>md ashif sheikh </h1>
+            <div class="box1">MD</div>
+            <div class="box1">ASHIF</div>
+            <div class="box1">SHEKH</div>
+            <div class="box1">SAHAB</div>
+        </section>           
+        <hr> -->
+
+      <section class="secondsection" id="contact">
+        <h1>Contact Me</h1>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Md Ashif's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <h1></h1>
+          <ul>
+            <li><a class="Footer_Anchor" href="#home">Home</a></li>
+            <li><a class="Footer_Anchor" href="#about">About</a></li>
+            <li><a class="Footer_Anchor" href="#projects">Projects</a></li>
+            <li><a class="Footer_Anchor" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li><a class="Footer_Anchor" href="#home">Home</a></li>
+            <li><a class="Footer_Anchor" href="#about">About</a></li>
+            <li><a class="Footer_Anchor" href="#projects">Projects</a></li>
+            <li><a class="Footer_Anchor" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li><a class="Footer_Anchor" href="#home">Home</a></li>
+            <li><a class="Footer_Anchor" href="#about">About</a></li>
+            <li><a class="Footer_Anchor" href="#projects">Projects</a></li>
+            <li><a class="Footer_Anchor" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-rights">
+        <div class="footer_icon">
+          <a
+            class="ashif"
+            href="https://www.instagram.com/king__official__96_________a7/"
+            ><img
+              src="Insta-Logo-PNG-Free-Download.png"
+              style="width: 60px; height: 45px"
+              alt=""
+          /></a>
+          <a class="ashif" href="https://www.facebook.com/md.ashif.shekh.489398"
+            ><img
+              src="facebook-logo-png-transparent-background-facebook-png.png"
+              style="width: 60px; height: 60px; padding-left: 30px"
+              alt=""
+          /></a>
+          <a class="ashif" href="https://web.whatsapp.com/"
+            ><img
+              src="whatsapp-logo-transparent.png"
+              style="width: 50px; height: 50px; padding-left: 30px"
+              alt=""
+          /></a>
+        </div>
+        www.mdashifportfolio.com | All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Photo Editor",
+          "Web Designer",
+          "Web Developer",
+          "Photo Editor",
+          "Web Designer",
+          "Web Developer",
+          "Photo Editor",
+          "Web Designer",
+          "Web Developer",
+          "Photo Editor",
+          "Web Designer",
+          "Web Developer",
+        ],
+        typeSpeed: 50,
+      });
+
+      document.querySelectorAll("nav ul li a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
